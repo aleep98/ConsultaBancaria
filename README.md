@@ -1,18 +1,33 @@
-## Getting Started
+# Consulta Bancária
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+Uma aplicação de console simples em Java para simular operações bancárias básicas.
 
-## Folder Structure
+## 📋 Funcionalidades
 
-The workspace contains two folders by default, where:
+O sistema identifica o usuário e oferece um menu interativo com as seguintes opções:
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+1.  **Ver Saldo**: Exibe o saldo atual disponível na conta.
+2.  **Fazer Transferência**: Permite transferir valores, realizando a validação se o saldo é suficiente antes de concluir a operação.
+3.  **Depositar**: Adiciona o valor informado ao saldo da conta.
+4.  **Sair**: Encerra a execução do programa.
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+## 🚀 Como Executar
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
+### Pré-requisitos
 
-## Dependency Management
+*   **Java JDK 15 ou superior**: O código utiliza *Text Blocks* (blocos de texto com `"""`), que se tornaram padrão a partir do Java 15.
 
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+### Passo a passo
+
+1.  Abra um terminal na pasta raiz do projeto (a pasta que contém o diretório `src`).
+
+2.  Execute o arquivo diretamente com o seguinte comando. Ele irá compilar e rodar o programa em um único passo:
+    ```bash
+    java src/ConsultaBancaria.java
+    ```
+    > **Nota**: Este método de execução direta de arquivos `.java` é um recurso disponível a partir do Java 11, sendo compatível com os pré-requisitos do projeto.
+
+## 🛠️ Tecnologias Utilizadas
+
+*   **Java**: Linguagem principal.
+*   **java.util.Scanner**: Para captura de entradas do usuário via terminal.
